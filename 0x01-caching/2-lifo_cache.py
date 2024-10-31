@@ -2,6 +2,7 @@
 """ BaseCaching module
 """
 
+
 from collections import OrderedDict
 from base_caching import BaseCaching
 
@@ -20,7 +21,7 @@ class LRUCache(BaseCaching):
 
     def put(self, key, item):
         """
-        inherits from a possesed
+        handles item addition in a cache stack
         :param key: container
         :param item:
         :return:
@@ -34,7 +35,8 @@ class LRUCache(BaseCaching):
         self.cache_data[key] = item
         self.cache_data.move_to_end(key, last=True)
 
-        def get(self, key):
-            """utilizes the get method.
-            """
-            return self.cache_data.get(key, None)
+    def get(self, key):
+        """
+        utilizes the get method.
+        """
+        return self.cache_data.get(key, None)
