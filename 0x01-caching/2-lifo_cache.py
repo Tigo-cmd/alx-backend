@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """BaseCaching module documentations
 """
-
-
 from collections import OrderedDict
 from base_caching import BaseCaching
 
 
-class LRUCache(BaseCaching):
+class LIFOCache(BaseCaching):
     """
     a class that inherits from BaseCaching
     """
