@@ -42,7 +42,7 @@ class FIFOCache(BaseCaching):
     def get(self, key):
         """
         returns the cache values
-        :param key: values passed
+        :param key: passed
         :return: value in cache data
         """
         return self.cache_data.get(key, None)
