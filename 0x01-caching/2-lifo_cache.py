@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" BaseCaching module
+"""BaseCaching module documentations
 """
 
 
